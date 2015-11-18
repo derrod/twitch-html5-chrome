@@ -1,0 +1,12 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "replace_player.js" ],
+      "matches": [ "http://twitch.tv/*", "https://twitch.tv/*", "http://*.twitch.tv/*", "https://*.twitch.tv/*" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Replaces twitch flash player with the (unreleased but functional) HTML5 player",
+   "manifest_version": 2,
+   "name": "Twitch HTML5 Player Replacer",
+   "version": "1.01"
+}
