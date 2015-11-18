@@ -6,7 +6,7 @@ function html5replace() {
             if (!window.Ember || !window.App || App.__container__.lookup("controller:application").get("currentRouteName") !== "channel.index") {
                 return;
             }
-            $(".js-player").html($("<iframe>").attr("src", "http://player.twitch.tv/?html5&fullscreen=enabled&branding=false&showInfo=false&channel="+window.location.pathname.substr(1)).attr("width", "100%").attr("height", "100%").css("border", 0).attr("scrolling", "no").attr("frameborder", 0).attr("allowfullscreen", ""));
+            $(".js-player").html($("<iframe>").attr("src", "http://player.twitch.tv/?html5&fullscreen=enabled&branding=false&showInfo=false&channel="+window.location.pathname.substr(1)).attr("width", "100%").attr("height", "100%").attr("scrolling", "no").attr("frameborder", 0).attr("allowfullscreen", ""));
         }, 5000);
     };
     
